@@ -1,0 +1,207 @@
+.flyout-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4em;
+    gap: 64px;
+
+    @include media-breakpoint-up(_768) {
+        margin-top: 3.5em;
+        margin-left: 2.5em;
+        margin-right: 0;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    @include media-breakpoint-up(_1280) {
+        gap: 0;
+        grid-template-columns: 4fr 1fr 7fr;
+        margin-left: 11.45vw;
+    }
+}
+#tenderness-touch-block.flyout-block{
+    @include media-breakpoint-down(_768) {
+        margin-top: 0;
+    }
+}
+#lord-of-desert-block .flyout-block__picture-col{
+    @include media-breakpoint-down(_768) {
+        display: none;
+    }
+}
+#lord-of-desert-block .flyout-block__mobile-picture{
+    display: none;
+
+    @include media-breakpoint-down(_768) {
+        display: block;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    img{
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+#lord-of-desert-block .flyout-block__text-col{
+    @include media-breakpoint-down(_768) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+#lord-of-desert-block .flyout-block__hdr,
+#lord-of-desert-block .flyout-block__p{
+    @include media-breakpoint-down(_768) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding: 0;
+    }
+}
+#lord-of-desert-block .flyout-block__hdr{
+    @include media-breakpoint-down(_768) {
+        padding-bottom: 1rem;
+    }
+}
+
+.flyout-block.revert {
+
+    @include media-breakpoint-up(_768) {
+        margin-left: 0;
+        margin-right: 2.5em;
+        gap: 30px;
+    }
+    @include media-breakpoint-up(_1280) {
+        grid-template-columns: 7fr 1fr 4fr;
+        gap: 0;
+        margin-right: 11.45vw;
+    }
+}
+
+.flyout-block__text-col {
+    margin-left: 1.5em;
+    margin-right:1.5em;
+
+    @include media-breakpoint-up(_768) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.flyout-block__text-col {
+    order: 2;
+
+    @include media-breakpoint-up(_768) {
+        order: 1;
+    }
+}
+.flyout-block.revert .flyout-block__text-col {
+    order: 2;
+
+    @include media-breakpoint-up(_768) {
+        order: 3;
+    }
+}
+
+.flyout-block__spl {
+    display: none;
+
+    @include media-breakpoint-up(_1280) {
+        display: block;
+        order: 2;
+    }
+}
+
+.flyout-block__hdr {
+    color: $gold;
+    font-family: $font-family-accidental;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1.3;
+
+    @include media-breakpoint-up(_1280) {
+        font-size: 2.4em;
+    }
+}
+
+.flyout-block__p {
+    padding-top: 1em;
+
+    @include media-breakpoint-up(_1280) {
+        padding-top: 1.5em;
+    }
+}
+.flyout-block__picture-col{
+    order: 1;
+
+    @include media-breakpoint-up(_768) {
+        order: 3;
+    }
+}
+.flyout-block.revert .flyout-block__picture-col {
+    order: 2;
+
+    @include media-breakpoint-up(_768) {
+        order: 1;
+    }
+}
+
+.flyout-block__picture img {
+    width: 100%;
+}
+
+.flyout-block__picture-col.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+    @include media-breakpoint-up(_1024) {
+        gap: 30px;
+    }
+}
+
+#purity-of-youth-text,
+#two-col-block-2-text,
+#two-col-block-1-text{
+    @include media-breakpoint-up(_1024) {
+        transform: translate(0, 10vh);
+    }
+}
+
+
+#two-col-block-2-pic-2,
+#two-col-block-1-pic-2{
+    @include media-breakpoint-up(_1024) {
+        transform: translate(15px, 35vh);
+    }
+}
+
+#two-col-block-2-pic-1,
+#two-col-block-1-pic-1{
+    @include media-breakpoint-up(_1024) {
+        transform: translate(25px, 25vh);
+    }
+}
+
+
+#purity-of-youth-2,
+.revert #two-col-block-2-pic-2,
+.revert #two-col-block-1-pic-2{
+    @include media-breakpoint-up(_1024) {
+        transform: translate(-25px, 35vh);
+    }
+}
+
+
+
+#purity-of-youth-1,
+.revert #two-col-block-2-pic-1,
+.revert #two-col-block-1-pic-1 {
+    @include media-breakpoint-up(_1024) {
+        transform: translate(-15px, 35vh);
+    }
+}
+
+#two-col-block-3.kashmir{
+    margin-top: 0;
+}

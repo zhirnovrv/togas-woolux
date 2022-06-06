@@ -1,0 +1,42 @@
+.desert-tiny-block{
+    position: relative;
+    margin: 4em 0 0 0;
+
+    @include media-breakpoint-up(_768) {
+        margin: 4em 0 4em 0;
+    }
+    @include media-breakpoint-up(_1280) {
+        margin: 8em 0 8em 0;
+    }
+}
+.desert-tiny-block__text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-family: $font-family-accidental;
+    color: $white;
+    font-size: 1em;
+    letter-spacing: .15rem;
+
+    @include media-breakpoint-up(_768) {
+        letter-spacing: .25rem;
+    }
+}
+.desert-tiny-block__text.large{
+    font-size: 2em;
+
+    @include media-breakpoint-up(_1280) {
+        font-size: 3em;
+    }
+}
+.desert-tiny-block__picture img{
+    width: 100%;
+}

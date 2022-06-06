@@ -1,0 +1,40 @@
+.simple-text-block{
+    margin: 4em 0 4em 0;
+
+    @include media-breakpoint-up(_1280) {
+        margin: 8em 0 8em 0;
+    }
+}
+.simple-text-block.col-8{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @include media-breakpoint-up(_1024) {
+        grid-template-columns: 2fr 9fr 2fr;
+    }
+}
+.simple-text-block.col-6{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @include media-breakpoint-up(_1024) {
+        grid-template-columns: 2fr 10fr 2fr;
+    }
+    @include media-breakpoint-up(_1440) {
+        grid-template-columns: 3fr 7fr 3fr;
+    }
+}
+.simple-text-block p{
+    text-align: center;
+}
+.simple-text-block.italic p{
+    font-size: 1rem;
+    font-style: italic;
+    font-family: $font-family-accidental;
+
+    @include media-breakpoint-up(_768) {
+        font-size: 1.5em;
+    }
+}

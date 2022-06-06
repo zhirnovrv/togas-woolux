@@ -1,0 +1,31 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "bootstrap/custom-extra";
+@import "bootstrap/custom";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+
+@import "index-cover";
+
+
+.index-spl{
+    border-top: 1px dashed $gold;
+    border-bottom: 1px dashed $gold;
+    display: flex;
+    justify-content: center;
+
+    span{
+        display: block;
+        border-left: 1px dashed $gold;
+        width: 0;
+        height: 56px;
+    }
+}
+.index-spl.wtop{
+    border-top: 0;
+}
+.index-spl.wbot{
+    border-bottom: 0;
+}

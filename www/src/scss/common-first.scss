@@ -1,0 +1,114 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "bootstrap/custom-extra";
+@import "bootstrap/custom";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+@import "header-line";
+
+
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container-wide {
+    width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    height: inherit;
+
+    @include media-breakpoint-up(_576) {
+        //max-width: calc(100vw - 60px) !important;
+
+    }
+    @include media-breakpoint-up(_768) {
+        max-width: calc(100vw - 13.46vw) !important;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    @include media-breakpoint-up(_1024) {
+        //max-width: 80vw !important;
+        //max-width: calc(100vw - 100px) !important;
+    }
+
+    @include media-breakpoint-up(_1280) {
+        max-width: calc(100vw - 22.90vw) !important;
+        //max-width: 1100px !important;
+
+    }
+    @include media-breakpoint-up(_1680) {
+        max-width: calc(100vw - (14.58vw + 4.86vw)) !important;
+    }
+    @include media-breakpoint-up(_1920) {
+        //max-width: calc(100vw - 450px) !important;
+    }
+}
+.container {
+    width: 100%;
+    max-width:calc(100vw - 48px);
+    margin-right: 24px;
+    margin-left: 24px;
+    height: inherit;
+
+    @include media-breakpoint-up(_576) {
+        //max-width: calc(100vw - 60px) !important;
+
+    }
+    @include media-breakpoint-up(_768) {
+        max-width: calc(100vw - 78px) !important;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include media-breakpoint-up(_1024) {
+        //max-width: calc(100vw - 78px) !important;
+
+    }
+    @include media-breakpoint-up(_1280) {
+        max-width: calc(100vw - 22.91vw) !important;
+       // max-width: 1100px !important;
+    }
+    @include media-breakpoint-up(_1680) {
+        //max-width: 1100px !important;
+        max-width: calc(100vw - (22.91vw + 7.63vw)) !important;
+    }
+    @include media-breakpoint-up(_1920) {
+        //max-width: calc(100vw - 450px) !important;
+    }
+}
+
+html.fixed {
+    min-height: calc(var(--vh, 1vh) * 100);
+    height: auto;
+}
+body.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: calc(var(--vh, 1vh) * 100);
+    height: auto;
+    width: 100vw;
+}
+.grecaptcha-badge{
+    box-shadow: none !important;
+    right: -256px !important;
+}
+.grecaptcha-logo{
+    display: none !important;
+}
+label{
+    padding: 0;
+    margin: 0;
+}
+

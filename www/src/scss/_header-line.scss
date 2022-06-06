@@ -1,0 +1,24 @@
+.header-line__wrp {
+    height: 114px;
+    width: 100%;
+
+    @include media-breakpoint-up(_1024) {
+        height: 100px;
+    }
+}
+.header-line {
+    height: 114px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 110;
+
+    @include media-breakpoint-up(_1024) {
+        height: 100px;
+    }
+}

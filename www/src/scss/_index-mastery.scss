@@ -1,0 +1,27 @@
+.index-mastery{
+
+}
+.index-mastery__body{
+    margin: 3.5em 0 3.5em 0;
+    text-align: center;
+
+    @include media-breakpoint-up(_1024) {
+        margin: 5em 0 5em 0;
+    }
+}
+.index-mastery__hdr{
+    font-family: $font-family-accidental;
+    color: $gold;
+    letter-spacing: .25em;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 3.5rem 0 1.5rem 0;
+}
+.index-mastery__text{
+    margin: 0 auto;
+
+    @include media-breakpoint-up(_1024) {
+        width: 70%;
+    }
+}
