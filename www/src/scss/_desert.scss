@@ -1,4 +1,16 @@
+.desert__wrp{
+    position: relative;
+}
+.desert-text__wrp{
 
+    @include media-breakpoint-up(_768) {
+        position: fixed;
+        width: 100%;
+        height: 60vh;
+        left: 0;
+        top: 0;
+    }
+}
 .desert-bg{
     width: 100%;
     height: 60vh;
@@ -74,7 +86,8 @@
 
 
     @include media-breakpoint-up(_768) {
-        transform: translate(0px, 90vh);
+        transform: translate(0px, 130vh);
+        opacity: 0;
     }
     @include media-breakpoint-up(_1440) {
 
@@ -125,5 +138,21 @@
     @include media-breakpoint-up(_768) {
         display: block;
         height: 100vh;
+    }
+}
+.desert-bg__pseudo-h{
+    display: none;
+
+    @include media-breakpoint-up(_768) {
+        display: block;
+        height: 50vh;
+    }
+}
+.desert-bg__pseudo-h{
+    display: none;
+
+    @include media-breakpoint-up(_768) {
+        display: block;
+        height: 50vh;
     }
 }

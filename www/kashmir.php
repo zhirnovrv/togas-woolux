@@ -50,6 +50,11 @@
 define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");
 ?>
 <body>
+<div class="header-line__wrp">
+    <div class="header-line">
+        <img src="/images/logo.svg" alt="Togas Woolux" title="Home"/>
+    </div>
+</div>
 <div class="cover__wrp">
     <section class="cover-bg">
         <picture class="cover-bg__picture">
@@ -81,32 +86,39 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
     </section>
 </div>
 <div class="trigger-1"></div>
-<div class="desert-bg">
-    <div class="desert__infinite-majesty">
-        <div class="container">
-            <div class="desert__infinite-majesty__body">
-                <div class="desert__infinite-majesty__hdr">
-                    Поднебесье
-                </div>
-                <div class="desert__infinite-majesty__text">
-                    Недаром называемый поднебесным, Тибет приветствует нас своими горными ландшафтами. Здесь трудно дышать — на такой высоте мало кислорода, но
-                    его чистота и свежесть уникальны. Эти эпитеты свойственны многому в этих краях, включая тех обитателей, ради кого мы здесь сегодня.
+<div class="desert__wrp">
+    <div class="desert-text__wrp">
+        <div class="desert__infinite-majesty">
+            <div class="container">
+                <div class="desert__infinite-majesty__body">
+                    <div class="desert__infinite-majesty__hdr">
+                        Поднебесье
+                    </div>
+                    <div class="desert__infinite-majesty__text">
+                        Недаром называемый поднебесным, Тибет приветствует нас своими горными ландшафтами. Здесь трудно дышать — на такой высоте мало кислорода,
+                        но
+                        его чистота и свежесть уникальны. Эти эпитеты свойственны многому в этих краях, включая тех обитателей, ради кого мы здесь сегодня.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <picture class="desert-bg__picture">
-        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-mobile.webp" type="image/webp">
-        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-mobile.jpg" type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-tablet.webp" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-tablet.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains.jpg" type="image/jpeg">
-        <img class="lazy" src="/images/mountains.jpg" alt="">
-    </picture>
+    <div class="desert-bg">
+        <picture class="desert-bg__picture">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/mountains.jpg" type="image/jpeg">
+            <img class="lazy" src="/images/mountains.jpg" alt="">
+        </picture>
+    </div>
 </div>
 <div class="trigger-2"></div>
-<div class="desert-bg__pseudo"></div>
+<div class="desert-bg__pseudo-h"></div>
+<div class="trigger-2-5"></div>
+<div class="desert-bg__pseudo-h"></div>
 <div class="trigger-3"></div>
 <div class="flyout-block" id="two-col-block-1">
     <div class="flyout-block__text-col" id="two-col-block-1-text">
@@ -350,15 +362,15 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 </div>
 
 <div class="to-top"><img src="/images/to-top.svg" alt="Вверх"/></div>
-<link href="/css/common-second.css" type="text/css" rel="stylesheet"/>
-<link href="/css/kashmir-second.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js"></script>
-<script type="text/javascript" src="/js/common.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.gsap.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.scrollmagic.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.scrollmagic-plugin-gsap.bundle.js"></script>
-<script type="text/javascript" src="/js/smooth_scroll.bundle.js"></script>
-<script type="text/javascript" src="/js/kashmir.bundle.js"></script>
+<link href="/css/common-second.css?<?= rand(0, 99999) ?>" type="text/css" rel="stylesheet"/>
+<link href="/css/kashmir-second.css?<?= rand(0, 99999) ?>" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/common.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/npm.gsap.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/npm.scrollmagic.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/npm.scrollmagic-plugin-gsap.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/smooth_scroll.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/kashmir.bundle.js?<?= rand(0, 99999) ?>"></script>
 <div id="css-support-msg" style="display: none"></div>
 </body>
 </html>

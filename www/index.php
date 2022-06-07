@@ -50,6 +50,11 @@
 define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");
 ?>
 <body>
+<div class="header-line__wrp">
+    <div class="header-line">
+        <img src="/images/logo.svg" alt="Togas Woolux" title="Home"/>
+    </div>
+</div>
 <div class="index-cover__wrp">
     <div class="index-cover-bg">
         <!--<picture class="index-cover-bg__picture">

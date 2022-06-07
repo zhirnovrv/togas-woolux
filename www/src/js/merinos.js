@@ -11,6 +11,7 @@ let controller,
     desertParalaxScene,
     coverHideScene,
     desertTextParalaxScene,
+    desertTextOpacityScene,
     coverHideTransScene,
     TwoColBlock_1,
     TwoColBlock_1_Pic1,
@@ -39,7 +40,7 @@ window.addEventListener('resize', () => {
 function updateCoverAnimation() {
     if (window.innerWidth >= 768) {
 
-        document.querySelector('.desert__infinite-majesty').style.transform = 'translate(0, 90vh)';
+        document.querySelector('.desert__infinite-majesty').style.transform = 'translate(0, 130vh)';
 
         coverTextHideScene.enabled(true).refresh();
         coverHideScene.enabled(true).refresh();
@@ -47,14 +48,25 @@ function updateCoverAnimation() {
         desertHideScene.enabled(true).refresh();
         desertParalaxScene.enabled(true).refresh();
         desertTextParalaxScene.enabled(true).refresh();
+        desertTextOpacityScene.enabled(true).refresh();
 
     } else {
+
+        document.querySelector('.desert__infinite-majesty').style.transform = '';
+        document.querySelector('.desert__infinite-majesty').opacity = '1';
+        document.querySelector('.cover__body').style.opacity = '1';
+        document.querySelector('.cover-bg').style.transform = '';
+        document.querySelector('.cover-bg').style.opacity = '1';
+        document.querySelector('.desert-bg').style.transform = '';
+        document.querySelector('.desert-bg').style.opacity = '1';
+
         coverTextHideScene.enabled(false).refresh();
         coverHideScene.enabled(false).refresh();
         coverHideTransScene.enabled(false).refresh();
         desertHideScene.enabled(false).refresh();
         desertParalaxScene.enabled(false).refresh();
         desertTextParalaxScene.enabled(false).refresh();
+        desertTextOpacityScene.enabled(false).refresh();
     }
     if (window.innerWidth >= 1024) {
 
@@ -176,11 +188,23 @@ function initCoverAnimation() {
 
     desertTextParalaxScene = new ScrollMagic.Scene({
         triggerElement: ".trigger-2",
-        duration: "150%",
+        duration: "165%",
         triggerHook: 1
     })
         .setTween(gsap.timeline().to(".desert__infinite-majesty", {
-            y: '-30vh', ease: Linear.easeNone
+            y: '-30vh',
+            ease: Linear.easeNone
+        }))
+        .addTo(controller);
+
+    desertTextOpacityScene = new ScrollMagic.Scene({
+        triggerElement: ".trigger-2-5",
+        duration: "10%",
+        triggerHook: 1
+    })
+        .setTween(gsap.timeline().to(".desert__infinite-majesty", {
+            opacity: 1,
+            ease: Linear.easeNone
         }))
         .addTo(controller);
 

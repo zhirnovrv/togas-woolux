@@ -50,7 +50,11 @@
 define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");
 ?>
 <body>
-
+<div class="header-line__wrp">
+    <div class="header-line">
+        <img src="/images/logo.svg" alt="Togas Woolux" title="Home"/>
+    </div>
+</div>
 <div class="cover__wrp">
     <section class="cover-bg">
         <picture class="cover-bg__picture">
@@ -82,33 +86,39 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
     </section>
 </div>
 <div class="trigger-1"></div>
-<div class="desert-bg">
-    <div class="desert__infinite-majesty">
-        <div class="container">
-            <div class="desert__infinite-majesty__body">
-                <div class="desert__infinite-majesty__hdr">
-                    Бескрайнее величие
-                </div>
-                <div class="desert__infinite-majesty__text">
-                    Пустыня Гоби встречает нас суровым климатом вне зависимости от времени года — ледяные зимние ночи сменяют раскаленные летние дни. Здесь
-                    сложно
-                    чувствовать себя комфортно, но есть один обитатель, или, скорее повелитель этих мест, приспособившийся к холодам и жаре.
+<div class="desert__wrp">
+    <div class="desert-text__wrp">
+        <div class="desert__infinite-majesty">
+            <div class="container">
+                <div class="desert__infinite-majesty__body">
+                    <div class="desert__infinite-majesty__hdr">
+                        Бескрайнее величие
+                    </div>
+                    <div class="desert__infinite-majesty__text">
+                        Пустыня Гоби встречает нас суровым климатом вне зависимости от времени года — ледяные зимние ночи сменяют раскаленные летние дни. Здесь
+                        сложно
+                        чувствовать себя комфортно, но есть один обитатель, или, скорее повелитель этих мест, приспособившийся к холодам и жаре.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <picture class="desert-bg__picture">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert-mobile.webp" type="image/webp">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert-mobile.jpg" type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert-tablet.webp" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert-tablet.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert.jpg" type="image/jpeg">
-        <img class="lazy" src="/images/desert.jpg" alt="">
-    </picture>
+    <div class="desert-bg">
+        <picture class="desert-bg__picture">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert.jpg" type="image/jpeg">
+            <img class="lazy" src="/images/desert.jpg" alt="">
+        </picture>
+    </div>
 </div>
-<div class="trigger-2" ></div>
-<div class="desert-bg__pseudo"></div>
+<div class="trigger-2"></div>
+<div class="desert-bg__pseudo-h"></div>
+<div class="trigger-2-5"></div>
+<div class="desert-bg__pseudo-h"></div>
 <div class="trigger-3"></div>
 <div class="flyout-block" id="lord-of-desert-block">
     <div class="flyout-block__text-col" id="lord-of-desert-text">
@@ -118,8 +128,8 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
             регионах северной части Азии.
         </div>
         <picture class="flyout-block__mobile-picture">
-            <source  srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel-mobile.webp" type="image/webp">
-            <source  srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel-mobile.jpg" type="image/jpeg">
+            <source srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel-mobile.webp" type="image/webp">
+            <source srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel-mobile.jpg" type="image/jpeg">
             <img class="lazy" src="/images/lonely-camel-mobile.jpg" alt="">
         </picture>
         <div class="flyout-block__p">
@@ -130,12 +140,12 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
     <div class="flyout-block__spl"></div>
     <div class="flyout-block__picture-col">
         <picture class="flyout-block__picture">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel-mobile.webp" type="image/webp">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel-mobile.jpg" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel-tablet.webp" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel-tablet.jpg" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel.webp" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/lonely-camel.jpg" type="image/jpeg">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/lonely-camel.jpg" type="image/jpeg">
             <img class="lazy" src="/images/lonely-camel.jpg" alt="">
         </picture>
     </div>
@@ -143,22 +153,22 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 <div class="flyout-block revert" id="purity-of-youth">
     <div class="flyout-block__picture-col two">
         <picture class="flyout-block__picture" id="purity-of-youth-1">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-1-tablet.webp" type="image/webp">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-1-tablet.jpg" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-1-tablet.webp" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-1-tablet.jpg" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-1.webp" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-1.jpg" type="image/jpeg">
-            <img  class="lazy" src="/images/the-yang-clean-1.jpg" alt="">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-1-tablet.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-1-tablet.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-1-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-1-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-1.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-1.jpg" type="image/jpeg">
+            <img class="lazy" src="/images/the-yang-clean-1.jpg" alt="">
         </picture>
         <picture class="flyout-block__picture" id="purity-of-youth-2">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-2-tablet.webp" type="image/webp">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-2-tablet.jpg" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-2-tablet.webp" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-2-tablet.jpg" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-2.webp" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/the-yang-clean-2.jpg" type="image/jpeg">
-            <img  class="lazy" src="/images/the-yang-clean-2.jpg" alt="">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-2-tablet.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-2-tablet.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-2-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-2-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-2.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/the-yang-clean-2.jpg" type="image/jpeg">
+            <img class="lazy" src="/images/the-yang-clean-2.jpg" alt="">
         </picture>
     </div>
     <div class="flyout-block__spl"></div>
@@ -173,12 +183,12 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 <div class="desert-tiny-block" id="tiny-desert">
     <div class="desert-tiny-block__text">ПРИРОДНОЕ СОВЕРШЕНСТВО TOGAS</div>
     <picture class="desert-tiny-block__picture">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert-tiny-mobile.webp" type="image/webp">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/desert-tiny-mobile.jpg" type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>"  data-srcset="/images/desert-tiny-tablet.webp" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>"  data-srcset="/images/desert-tiny-tablet.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>"  data-srcset="/images/desert-tiny.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>"  data-srcset="/images/desert-tiny.jpg" type="image/jpeg">
+        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tiny-mobile.webp" type="image/webp">
+        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tiny-mobile.jpg" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tiny-tablet.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tiny-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tiny.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/desert-tiny.jpg" type="image/jpeg">
         <img class="lazy" src="/images/desert-tiny.jpg" alt="">
     </picture>
 </div>
@@ -196,12 +206,12 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
     <div class="flyout-block__spl"></div>
     <div class="flyout-block__picture-col">
         <picture class="flyout-block__picture">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/tenderness-touch-mobile.webp" type="image/webp">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/tenderness-touch-mobile.jpg" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/tenderness-touch-tablet.webp" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/tenderness-touch-tablet.jpg" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/tenderness-touch.webp" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/tenderness-touch.jpg" type="image/jpeg">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/tenderness-touch-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/tenderness-touch-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/tenderness-touch-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/tenderness-touch-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/tenderness-touch.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/tenderness-touch.jpg" type="image/jpeg">
             <img class="lazy" src="/images/tenderness-touch.jpg" alt="">
         </picture>
     </div>
@@ -209,12 +219,12 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 <div class="flyout-block revert" id="embrace-of-warmth-block">
     <div class="flyout-block__picture-col">
         <picture class="flyout-block__picture">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/embrace-of-warmth-mobile.webp" type="image/webp">
-            <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/embrace-of-warmth-mobile.jpg" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/embrace-of-warmth-tablet.webp" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/embrace-of-warmth-tablet.jpg" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/embrace-of-warmth.webp" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/embrace-of-warmth.jpg" type="image/jpeg">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/embrace-of-warmth-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/embrace-of-warmth-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/embrace-of-warmth-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/embrace-of-warmth-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/embrace-of-warmth.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/embrace-of-warmth.jpg" type="image/jpeg">
             <img class="lazy" src="/images/embrace-of-warmth.jpg" alt="">
         </picture>
     </div>
@@ -231,12 +241,12 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 <div class="desert-tiny-block">
     <div class="desert-tiny-block__text large">Натуральный обмен</div>
     <picture class="desert-tiny-block__picture">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/natural-exchange-mobile.webp" type="image/webp">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/natural-exchange-mobile.jpg" type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/natural-exchange-tablet.webp" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/natural-exchange-tablet.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/natural-exchange.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/natural-exchange.jpg" type="image/jpeg">
+        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/natural-exchange-mobile.webp" type="image/webp">
+        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/natural-exchange-mobile.jpg" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/natural-exchange-tablet.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/natural-exchange-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/natural-exchange.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/natural-exchange.jpg" type="image/jpeg">
         <img class="lazy" src="/images/natural-exchange.jpg" alt="">
     </picture>
 </div>
@@ -257,12 +267,12 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 <div id="trigger-4"></div>
 <div class="desert-tiny-block">
     <picture class="desert-tiny-block__picture">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/many-cemals-mobile.webp" type="image/webp">
-        <source media="(max-width: 576px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/many-cemals-mobile.jpg" type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/many-cemals-tablet.webp" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/many-cemals-tablet.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/many-cemals.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="<?=LAZY_IMAGE?>" data-srcset="/images/many-cemals.jpg" type="image/jpeg">
+        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/many-cemals-mobile.webp" type="image/webp">
+        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/many-cemals-mobile.jpg" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/many-cemals-tablet.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/many-cemals-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/many-cemals.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/many-cemals.jpg" type="image/jpeg">
         <img class="lazy" src="/images/many-cemals.jpg" alt="">
     </picture>
 </div>
@@ -340,16 +350,16 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
 </div>
 
 <div class="to-top"><img src="/images/to-top.svg" alt="Вверх"/></div>
-<link href="/css/common-second.css" type="text/css" rel="stylesheet"/>
-<link href="/css/camel-second.css" type="text/css" rel="stylesheet"/>
+<link href="/css/common-second.css?<?= rand(0, 99999) ?>" type="text/css" rel="stylesheet"/>
+<link href="/css/camel-second.css?<?= rand(0, 99999) ?>" type="text/css" rel="stylesheet"/>
 
-<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js"></script>
-<script type="text/javascript" src="/js/common.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.gsap.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.scrollmagic.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.scrollmagic-plugin-gsap.bundle.js"></script>
-<script type="text/javascript" src="/js/smooth_scroll.bundle.js"></script>
-<script type="text/javascript" src="/js/camel.bundle.js"></script>
+<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/common.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/npm.gsap.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/npm.scrollmagic.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/npm.scrollmagic-plugin-gsap.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/smooth_scroll.bundle.js?<?= rand(0, 99999) ?>"></script>
+<script type="text/javascript" src="/js/camel.bundle.js?<?= rand(0, 99999) ?>"></script>
 <div id="css-support-msg" style="display: none"></div>
 </body>
 </html>

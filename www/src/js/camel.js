@@ -11,6 +11,7 @@ let controller,
     desertParalaxScene,
     coverHideScene,
     desertTextParalaxScene,
+    desertTextOpacityScene,
     LordOfDesertScene,
     NoWeightScene,
     NoWeightScenePic1,
@@ -36,7 +37,7 @@ window.addEventListener('resize', () => {
 function updateCoverAnimation() {
     if (window.innerWidth >= 768) {
 
-        document.querySelector('.desert__infinite-majesty').style.transform= 'translate(0, 90vh)';
+        document.querySelector('.desert__infinite-majesty').style.transform = 'translate(0, 130vh)';
 
         coverTextHideScene.enabled(true).refresh();
         coverHideScene.enabled(true).refresh();
@@ -44,24 +45,35 @@ function updateCoverAnimation() {
         desertHideScene.enabled(true).refresh();
         desertParalaxScene.enabled(true).refresh();
         desertTextParalaxScene.enabled(true).refresh();
+        desertTextOpacityScene.enabled(true).refresh();
 
     } else {
+
+        document.querySelector('.desert__infinite-majesty').style.transform = '';
+        document.querySelector('.desert__infinite-majesty').opacity = '1';
+        document.querySelector('.cover__body').style.opacity = '1';
+        document.querySelector('.cover-bg').style.transform = '';
+        document.querySelector('.cover-bg').style.opacity = '1';
+        document.querySelector('.desert-bg').style.transform = '';
+        document.querySelector('.desert-bg').style.opacity = '1';
+
         coverTextHideScene.enabled(false).refresh();
         coverHideScene.enabled(false).refresh();
         coverHideTransScene.enabled(false).refresh();
         desertHideScene.enabled(false).refresh();
         desertParalaxScene.enabled(false).refresh();
         desertTextParalaxScene.enabled(false).refresh();
+        desertTextOpacityScene.enabled(false).refresh();
     }
     if (window.innerWidth >= 1024) {
 
-        document.querySelector('#camels-about').style.transform= 'translate(0, 0)';
-        document.querySelector('#embrace-of-warmth-text').style.transform= 'translate(0, 0)';
-        document.querySelector('#tenderness-touch-text').style.transform= 'translate(0, 0)';
-        document.querySelector('#lord-of-desert-text').style.transform= 'translate(0, 0)';
-        document.querySelector('#purity-of-youth-text').style.transform= 'translate(0, 10vh)';
-        document.querySelector('#purity-of-youth-1').style.transform= 'translate(-15px, 25vh)';
-        document.querySelector('#purity-of-youth-2').style.transform= 'translate(-25px, 35vh)';
+        document.querySelector('#camels-about').style.transform = 'translate(0, 0)';
+        document.querySelector('#embrace-of-warmth-text').style.transform = 'translate(0, 0)';
+        document.querySelector('#tenderness-touch-text').style.transform = 'translate(0, 0)';
+        document.querySelector('#lord-of-desert-text').style.transform = 'translate(0, 0)';
+        document.querySelector('#purity-of-youth-text').style.transform = 'translate(0, 10vh)';
+        document.querySelector('#purity-of-youth-1').style.transform = 'translate(-15px, 25vh)';
+        document.querySelector('#purity-of-youth-2').style.transform = 'translate(-25px, 35vh)';
 
         LordOfDesertScene.enabled(true).refresh();
         NoWeightScene.enabled(true).refresh();
@@ -80,13 +92,13 @@ function updateCoverAnimation() {
         EmbraceOfWarmthScene.enabled(false).refresh();
         CamelsAboutScene.enabled(false).refresh();
 
-        document.querySelector('#camels-about').style.transform= 'translate(0px, 0vh)';
-        document.querySelector('#embrace-of-warmth-text').style.transform= 'translate(0px, 0vh)';
-        document.querySelector('#tenderness-touch-text').style.transform= 'translate(0px, 0vh)';
-        document.querySelector('#lord-of-desert-text').style.transform= 'translate(0px, 0vh)';
-        document.querySelector('#purity-of-youth-text').style.transform= 'translate(0px, 0vh)';
-        document.querySelector('#purity-of-youth-1').style.transform= 'translate(0px, 0vh)';
-        document.querySelector('#purity-of-youth-2').style.transform= 'translate(0px, 0vh)';
+        document.querySelector('#camels-about').style.transform = 'translate(0px, 0vh)';
+        document.querySelector('#embrace-of-warmth-text').style.transform = 'translate(0px, 0vh)';
+        document.querySelector('#tenderness-touch-text').style.transform = 'translate(0px, 0vh)';
+        document.querySelector('#lord-of-desert-text').style.transform = 'translate(0px, 0vh)';
+        document.querySelector('#purity-of-youth-text').style.transform = 'translate(0px, 0vh)';
+        document.querySelector('#purity-of-youth-1').style.transform = 'translate(0px, 0vh)';
+        document.querySelector('#purity-of-youth-2').style.transform = 'translate(0px, 0vh)';
     }
 
 }
@@ -103,7 +115,8 @@ function initCoverAnimation() {
     })
         .setTween(gsap.timeline().to(".cover__body", {
             opacity: 0,
-            duration: 1
+            duration: 1,
+            ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -115,7 +128,8 @@ function initCoverAnimation() {
     })
         .setTween(gsap.timeline().to(".cover-bg", {
             opacity: 0,
-            duration: 1
+            duration: 1,
+            ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -126,7 +140,7 @@ function initCoverAnimation() {
     })
         .setTween(gsap.timeline().to(".cover-bg", {
             y: '-100vh',
-            ease: Linear.easeOut
+            ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -150,19 +164,30 @@ function initCoverAnimation() {
         triggerHook: 1
     })
         .setTween(gsap.timeline().to(".desert-bg", {
-            y: "-100vh", ease: Linear.easeOut
+            y: "-100vh", ease: Linear.easeNone
         }))
         .addTo(controller);
 
 
-
     desertTextParalaxScene = new ScrollMagic.Scene({
         triggerElement: ".trigger-2",
-        duration: "150%",
+        duration: "165%",
         triggerHook: 1
     })
         .setTween(gsap.timeline().to(".desert__infinite-majesty", {
-            y: '-30vh', ease: Linear.easeNone
+            y: '-30vh',
+            ease: Linear.easeNone
+        }))
+        .addTo(controller);
+
+    desertTextOpacityScene = new ScrollMagic.Scene({
+        triggerElement: ".trigger-2-5",
+        duration: "10%",
+        triggerHook: 1
+    })
+        .setTween(gsap.timeline().to(".desert__infinite-majesty", {
+            opacity: 1,
+            ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -172,7 +197,8 @@ function initCoverAnimation() {
         triggerHook: 1,
     })
         .setTween(gsap.timeline().to("#lord-of-desert-text", {
-            y: window.innerWidth > 1280 ? '40vh' : '25vh', ease: Linear.easeNone
+            y: window.innerWidth > 1280 ? '40vh' : '25vh',
+            ease: Linear.easeNone
         }))
         .addTo(controller);
 

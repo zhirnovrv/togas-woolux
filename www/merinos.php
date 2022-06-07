@@ -50,6 +50,11 @@
 define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=");
 ?>
 <body>
+<div class="header-line__wrp">
+    <div class="header-line">
+        <img src="/images/logo.svg" alt="Togas Woolux" title="Home"/>
+    </div>
+</div>
 <div class="cover__wrp">
     <section class="cover-bg">
         <picture class="cover-bg__picture">
@@ -81,33 +86,39 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
     </section>
 </div>
 <div class="trigger-1"></div>
-<div class="desert-bg">
-    <div class="desert__infinite-majesty">
-        <div class="container">
-            <div class="desert__infinite-majesty__body">
-                <div class="desert__infinite-majesty__hdr">
-                    Путешествие на край света
-                </div>
-                <div class="desert__infinite-majesty__text">
-                    Около тысячи лет назад, древние Берберы привезли в Испанию особый вид домашних овец, положив начало монополии Испанской короны на
-                    производство шерсти, продлившееся вплоть до XVIII века, когда, первые отары отборных мериносов отправились с Первым флотом в далекую
-                    Австралию.
+<div class="desert__wrp">
+    <div class="desert-text__wrp">
+        <div class="desert__infinite-majesty">
+            <div class="container">
+                <div class="desert__infinite-majesty__body">
+                    <div class="desert__infinite-majesty__hdr">
+                        Путешествие на край света
+                    </div>
+                    <div class="desert__infinite-majesty__text">
+                        Около тысячи лет назад, древние Берберы привезли в Испанию особый вид домашних овец, положив начало монополии Испанской короны на
+                        производство шерсти, продлившееся вплоть до XVIII века, когда, первые отары отборных мериносов отправились с Первым флотом в далекую
+                        Австралию.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <picture class="desert-bg__picture">
-        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-mobile.webp" type="image/webp">
-        <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-mobile.jpg" type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-tablet.webp" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-tablet.jpg" type="image/jpeg">
-        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley.webp" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley.jpg" type="image/jpeg">
-        <img class="lazy" src="/images/sunrise-valley.jpg" alt="">
-    </picture>
+    <div class="desert-bg">
+        <picture class="desert-bg__picture">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="<?= LAZY_IMAGE ?>" data-srcset="/images/sunrise-valley.jpg" type="image/jpeg">
+            <img class="lazy" src="/images/sunrise-valley.jpg" alt="">
+        </picture>
+    </div>
 </div>
 <div class="trigger-2"></div>
-<div class="desert-bg__pseudo"></div>
+<div class="desert-bg__pseudo-h"></div>
+<div class="trigger-2-5"></div>
+<div class="desert-bg__pseudo-h"></div>
 <div class="trigger-3"></div>
 <div class="flyout-block" id="two-col-block-1">
     <div class="flyout-block__text-col" id="two-col-block-1-text">
@@ -351,16 +362,15 @@ define('LAZY_IMAGE', "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQA
     </div>
 </div>
 
-<div class="to-top"><img src="/images/to-top.svg" alt="Вверх"/></div>
-<link href="/css/common-second.css" type="text/css" rel="stylesheet"/>
-<link href="/css/merinos-second.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js"></script>
-<script type="text/javascript" src="/js/common.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.gsap.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.scrollmagic.bundle.js"></script>
-<script type="text/javascript" src="/js/npm.scrollmagic-plugin-gsap.bundle.js"></script>
-<script type="text/javascript" src="/js/smooth_scroll.bundle.js"></script>
-<script type="text/javascript" src="/js/merinos.bundle.js"></script>
+
+<link href="/css/merinos-second.css?<?= rand(1, 999999) ?>" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js?<?= rand(1, 999999) ?>"></script>
+<script type="text/javascript" src="/js/common.bundle.js?<?= rand(1, 999999) ?>"></script>
+<script type="text/javascript" src="/js/npm.gsap.bundle.js?<?= rand(1, 999999) ?>"></script>
+<script type="text/javascript" src="/js/npm.scrollmagic.bundle.js?<?= rand(1, 999999) ?>"></script>
+<script type="text/javascript" src="/js/npm.scrollmagic-plugin-gsap.bundle.js?<?= rand(1, 999999) ?>"></script>
+<script type="text/javascript" src="/js/smooth_scroll.bundle.js?<?= rand(1, 999999) ?>"></script>
+<script type="text/javascript" src="/js/merinos.bundle.js?<?= rand(1, 999999) ?>"></script>
 <div id="css-support-msg" style="display: none"></div>
 </body>
 </html>
