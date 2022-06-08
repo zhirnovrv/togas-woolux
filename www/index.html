@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Бактрийский верблюд</title>
+    <style>
+        @font-face{font-family:PFBagueSansPro;src:url(/fonts/pfbaguesanspro-bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:PFBagueSansPro;src:url(/fonts/pfbaguesanspro-medium.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:PFBagueSansPro;src:url(/fonts/pfbaguesanspro.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:PFBagueSansPro;src:url(/fonts/pfbaguesanspro-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:PFRegalTextPro;src:url(/fonts/pfregaltextpro-regulara.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:PFRegalTextPro;src:url(/fonts/pfregaltextpro-regularaitalic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:PFRegalTextProB;src:url(/fonts/pfregaltextpro-regularb.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:PFRegalTextProB;src:url(/fonts/pfregaltextpro-regularbitalic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:PFRegalTextPro;src:url(/fonts/pfregaltextpro-medium.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:PFRegalTextPro;src:url(/fonts/pfregaltextpro-mediumitalic.woff2) format("woff2");font-weight:600;font-style:italic;font-display:swap}@font-face{font-family:PFRegalTextPro;src:url(/fonts/pfregaltextpro-bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+        *,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(38,37,36,0)}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-family:PFRegalTextPro,system-ui,-apple-system,Arial;font-weight:500;line-height:1.5}h1{font-size:calc(1.425rem + 2.1vw)}@media (min-width:1200px){h1{font-size:3rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#212529;text-decoration:underline}a:hover{color:#1a1e21}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:var(--bs-font-monospace);font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::-webkit-file-upload-button{font:inherit}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#D4000C;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#488d04;--bs-teal:#20c997;--bs-cyan:#76B5BD;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#D4000C;--bs-secondary:#6c757d;--bs-success:#488d04;--bs-info:#76B5BD;--bs-warning:#ffc107;--bs-danger:#D4000C;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:212,0,12;--bs-secondary-rgb:108,117,125;--bs-success-rgb:72,141,4;--bs-info-rgb:118,181,189;--bs-warning-rgb:255,193,7;--bs-danger-rgb:212,0,12;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:38,37,36;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:"PFBagueSansPro",system-ui,-apple-system,Arial;--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff}.header-line__wrp{height:114px;width:100%}@media (min-width:1024px){.header-line__wrp{height:100px}}.header-line{height:114px;background-color:#fff;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;position:fixed;left:0;top:0;width:100%;z-index:110}@media (min-width:1024px){.header-line{height:100px}}*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}html{scroll-behavior:smooth}.container-wide{width:100%;padding-right:24px;padding-left:24px;margin-right:auto;margin-left:auto;height:inherit}@media (min-width:768px){.container-wide{max-width:86.54vw!important;padding-right:0;padding-left:0}}@media (min-width:1280px){.container-wide{max-width:77.1vw!important}}@media (min-width:1680px){.container-wide{max-width:80.56vw!important}}.container{width:100%;max-width:calc(100vw - 48px);margin-right:24px;margin-left:24px;height:inherit}@media (min-width:768px){.container{max-width:calc(100vw - 78px)!important;padding-right:0;padding-left:0;margin-right:auto;margin-left:auto}}@media (min-width:1280px){.container{max-width:77.09vw!important}}@media (min-width:1680px){.container{max-width:69.46vw!important}}html.fixed{min-height:calc(var(--vh,1vh) * 100);height:auto}body.fixed{position:fixed;left:0;top:0;min-height:calc(var(--vh,1vh) * 100);height:auto;width:100vw}.grecaptcha-badge{box-shadow:none!important;right:-256px!important}.grecaptcha-logo{display:none!important}label{padding:0;margin:0}
+        *,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(38,37,36,0)}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-family:PFRegalTextPro,system-ui,-apple-system,Arial;font-weight:500;line-height:1.5}h1{font-size:calc(1.425rem + 2.1vw)}@media (min-width:1200px){h1{font-size:3rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#212529;text-decoration:underline}a:hover{color:#1a1e21}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:var(--bs-font-monospace);font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::-webkit-file-upload-button{font:inherit}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#D4000C;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#488d04;--bs-teal:#20c997;--bs-cyan:#76B5BD;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#D4000C;--bs-secondary:#6c757d;--bs-success:#488d04;--bs-info:#76B5BD;--bs-warning:#ffc107;--bs-danger:#D4000C;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:212,0,12;--bs-secondary-rgb:108,117,125;--bs-success-rgb:72,141,4;--bs-info-rgb:118,181,189;--bs-warning-rgb:255,193,7;--bs-danger-rgb:212,0,12;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:38,37,36;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:"PFBagueSansPro",system-ui,-apple-system,Arial;--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff}.index-cover-bg{position:relative}.index-cover-bg__picture{position:absolute;left:0;top:0;width:100%;height:546px;z-index:-2;min-width:100%;min-height:150%;overflow:hidden}@media (min-width:1024px){.index-cover-bg__picture{height:calc(100vh - 100px);min-height:670px}}.index-cover-bg__video{position:absolute;left:0;top:0;width:100%;height:546px;z-index:-1;min-width:100%;min-height:150%;overflow:hidden;opacity:0;-webkit-transition:opacity .3s ease;transition:opacity .3s ease}@media (min-width:1024px){.index-cover-bg__video{height:calc(100vh - 100px);min-height:670px}}.index-cover-bg__video.show{opacity:1}.index-cover-bg__picture img{-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%;height:546px}@media (min-width:1024px){.index-cover-bg__picture img{height:calc(100vh - 100px);min-height:670px}}.index-cover__container{position:relative;z-index:10;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;height:546px}@media (min-width:1024px){.index-cover__container{height:calc(100vh - 100px);min-height:670px}}.index-cover__container .container{height:-webkit-min-content;height:-moz-min-content;height:min-content}.index-cover__logo{margin-bottom:3.5em;text-align:right}@media (min-width:576px){.index-cover__logo{text-align:center}}@media (min-width:768px){.index-cover__logo{margin-bottom:4em;text-align:left}}.index-cover__logo img{width:100%;max-width:350px}.index-cover__links{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;gap:1em;font-weight:700;color:#262524;text-transform:uppercase}@media (min-width:1024px){.index-cover__links{gap:0;margin-bottom:6.5em;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;justify-content:space-between;width:350px}}.index-cover__links a{display:block;width:-webkit-min-content;width:-moz-min-content;width:min-content;text-decoration:none;border-bottom:1px dotted transparent;margin:0 auto;color:#262524}@media (min-width:768px){.index-cover__links a{margin:0}}.index-cover__links a:hover{text-decoration:none;border-bottom:1px dotted #262524}.index-cover__links span{display:none}@media (min-width:1024px){.index-cover__links span{display:inline}}.video .index-cover__links{color:#fff}.video .index-cover__links a{color:#fff}.video .index-cover__links a:hover{text-decoration:none;border-bottom:1px dotted #fff}.index-cover__text{width:60%;display:none;color:#262524}@media (min-width:1024px){.index-cover__text{display:block}}@media (min-width:1280px){.index-cover__text{width:60%}}@media (min-width:1680px){.index-cover__text{width:45%}}.index-cover__container.video .index-cover__text{color:#fff}.index-cover-mobile-text p,.index-cover__text p{margin:1.5em 0 0 0}.index-cover-mobile-text p:first-child{margin:0}@media (min-width:1024px){.index-cover-mobile-text{display:none}}.index-cover-mobile-text__body{margin:3.5em 0 3.5em 0}.index-spl{border-top:1px dashed #8d7d52;border-bottom:1px dashed #8d7d52;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center}.index-spl span{display:block;border-left:1px dashed #8d7d52;width:0;height:56px}.index-spl.wtop{border-top:0}.index-spl.wbot{border-bottom:0}
+    </style>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="/browserconfig.xml" name="msapplication-config">
+
+    <!-- open-graph -->
+    <meta content="ru" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="" property="og:title">
+    <meta content='' property="og:description">
+    <meta content="/images/og-image.jpg" property="og:image">
+    <meta content="summary" name="twitter:card">
+    <meta content="/images/og-image.jpg" name="twitter:image">
+    <meta content="Togas Woolux" name="twitter:title">
+    <meta content='' name="twitter:description">
+    <!-- /open-graph -->
+
+</head>
+<body>
+<div class="header-line__wrp">
+    <div class="header-line">
+        <img src="/images/logo.svg" alt="Togas Woolux" title="Home"/>
+    </div>
+</div>
+<div class="index-cover__wrp">
+    <div class="index-cover-bg">
+        <!--<picture class="index-cover-bg__picture">
+            <source media="(max-width: 576px)" srcset="/images/index-cover-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="/images/index-cover-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="/images/index-cover-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="/images/index-cover-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="/images/index-cover.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/images/index-cover.jpg" type="image/jpeg">
+            <img src="/images/index-cover.jpg" alt="">
+        </picture>-->
+        <picture class="index-cover-bg__picture">
+            <source media="(max-width: 576px)" srcset="/images/video-cover-mobile.webp" type="image/webp">
+            <source media="(max-width: 576px)" srcset="/images/video-cover-mobile.jpg" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="/images/video-cover-tablet.webp" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="/images/video-cover-tablet.jpg" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="/images/video-cover.webp" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/images/video-cover.jpg" type="image/jpeg">
+            <img src="/images/video-cover.jpg" alt="">
+        </picture>
+        <div class="index-cover-bg__video">
+            <iframe src="https://www.youtube.com/embed/lEomgk8sz-4?autoplay=1&loop=1&enablejsapi=1&controls=0&modestbranding=1&rel=0&showinfo=0&color=white&iv_load_policy=3&theme=light&wmode=transparent&origin=http://woolux.mario-it.ru&playlist=lEomgk8sz-4&mute=1"
+                    frameborder="0"
+                    allow="autoplay"
+                    id="iframebg">
+
+            </iframe>
+        </div>
+    </div>
+    <div class="index-cover__container video">
+        <div class="container">
+            <div class="index-cover__logo">
+                <img src="/images/logo-woolux.svg" alt="Togas Woolux" title="Togas Woolux"/>
+            </div>
+            <div class="index-cover__links">
+                <a href="#mastery">Мастерство</a>
+                <span>|</span>
+                <a href="#innovation">Инновации</a>
+                <span>|</span>
+                <a href="#etic">Этика</a>
+            </div>
+            <div class="index-cover__text">
+                <p>
+                    Шерсть – уникальный природный материал, тысячелетиями формировавшийся для защиты обитателей нашей планеты от ее суровых условий. 100%
+                    натуральные,
+                    устойчивые к множеству воздействий, прочные и необычайно мягкие волокна сегодня являются основной множества великолепных продуктов Togas.
+                </p>
+                <p>
+                    Десятилетиями подбирая и обрабатывая лучшие сорта шерсти по всему миру мы накапливали знания, которые сегодня зафиксированы в стандарте
+                    качества
+                    WOOLUX, разработанном в Афинском R&D центре QC Worldwide от Togas Innovations.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl wtop">
+    <span></span>
+</div>
+<div class="index-cover-mobile-text">
+    <div class="container">
+        <div class="index-cover-mobile-text__body">
+            <p>
+                Шерсть – уникальный природный материал, тысячелетиями формировавшийся для защиты обитателей нашей планеты от ее суровых условий. 100%
+                натуральные,
+                устойчивые к множеству воздействий, прочные и необычайно мягкие волокна сегодня являются основной множества великолепных продуктов Togas.
+            </p>
+            <p>
+                Десятилетиями подбирая и обрабатывая лучшие сорта шерсти по всему миру мы накапливали знания, которые сегодня зафиксированы в стандарте качества
+                WOOLUX, разработанном в Афинском R&D центре QC Worldwide от Togas Innovations.
+            </p>
+        </div>
+    </div>
+    <div class="index-spl">
+        <span></span>
+    </div>
+</div>
+<div class="index-mastery" id="mastery">
+    <div class="container">
+        <div class="index-mastery__body">
+            <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/logo-woolux-small.svg" alt="Togas Woolux" title="Home"/>
+            <div class="index-mastery__hdr">МАСТЕРСТВО</div>
+            <div class="index-mastery__text">
+                Только лучшие мастера своих ремесел способны находить и отбирать редчайшие отборные волокна шерсти по всему миру, и затем превращать их в
+                великолепную пряжу, из которой создаются наши непревзойденные изделия.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl wbot">
+    <span></span>
+</div>
+<div class="container">
+    <picture class="index-fabric__picture">
+        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-fabric-mobile.webp" type="image/webp">
+        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-fabric-mobile.jpg" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-fabric-tablet.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-fabric-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-fabric.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-fabric.jpg" type="image/jpeg">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/woolux-fabric.jpg" alt="">
+    </picture>
+    <div class="index-fabric__grid">
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Поиск <span>сырья</span></div>
+            <div class="index-fabric__text">
+                Разбросанные по всей восточной части мира, фермы по производству шерсти существенно отличаются качеством своего сырья. Мы уверены, что только
+                личный контроль может являться залогом постоянного уровня высочайшего качества. Поэтому опытные скауты Togas неустанно путешествуют в самые
+                дальние уголки мира, чтобы находить и сертифицировать партнеров, у которых мы закупаем высококлассную необработанную шерсть.
+            </div>
+        </div>
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Отбор <span>волокон</span></div>
+            <div class="index-fabric__text">
+                Специальные процедуры отбора волокон, которые проводятся при закупке каждой партии шерсти, включают в себя множество визуальных, тактильных,
+                прочностных и молекулярных тестов, которые выполняются на местах нашими экспертами. Локальное тестирование подразумевает максимально высокую
+                квалификацию наших экспертов, а также дополнительные затраты на тестовое оборудование, однако мы верим, что это единственный способ выбора
+                лучших, тончайших волокон шерсти, достойных стандарта WOOLUX.
+            </div>
+        </div>
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Контроль <span>качества</span></div>
+            <div class="index-fabric__text">
+                Весь объем найденного на лучших фермах и скрупулезно отобранного сырья поступает в лаборатории QC Worldwide, расположенные в логистических хабах
+                Togas в Китае, ОАЭ, Греции и Турции. Здесь проводятся дополнительные масштабные тесты, чтобы убедиться что все 100% поступающих волокон
+                соответствуют установленным стандартам по размерности, цветности, чистоте и составу, и, таким образом, пригодны для дальнейшей обработки.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl">
+    <span></span>
+</div>
+<div class="index-mastery" id="innovation">
+    <div class="container">
+        <div class="index-mastery__body">
+            <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/logo-woolux-small.svg" alt="Togas Woolux" title="Home"/>
+            <div class="index-mastery__hdr">ИННОВАЦИИ</div>
+            <div class="index-mastery__text">
+                Являясь 100% натуральным материалом, шерсть сама по себе обладает широким набором генетически встроенных защитных и прочностных свойств. Любое
+                вмешательство в структуру этой натуральности может привести к нарушению или разрушению таковых. Стандарт WOOLUX подразумевает особые процедуры
+                по очистке сырья, а также дальнейшем крашении шерсти, если крашение необходимо.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl wbot">
+    <span></span>
+</div>
+<div class="container">
+    <picture class="index-fabric__picture">
+        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-innovation-mobile.webp" type="image/webp">
+        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-innovation-mobile.jpg" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-innovation-tablet.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-innovation-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-innovation.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-innovation.jpg" type="image/jpeg">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/woolux-innovation.jpg" alt="">
+    </picture>
+    <div class="index-fabric__grid two-col">
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Очистка<br/><span>сырой шерсти</span></div>
+            <div class="index-fabric__text">
+                Для мытья сырой шерсти WOOLUX используется проточная вода механической фильтрации в сочетании с особыми сортами органического мыла, состав
+                которого разработан в Togas Innovations при содействии европейских партнеров. Учитывая способ мытья и необходимые материалы, вся первичная
+                обработка происходит только на собственных или сертифицированных производствах.
+            </div>
+        </div>
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Крашение<br/><span>мытой шерсти</span></div>
+            <div class="index-fabric__text">
+                <p>
+                    Известно, что крашение шерсти существенно влияет на ее свойства. В связи с этим мы стремимся к тому, чтобы оставлять неокрашенной
+                    максимальное количество шерсти стандарта WOOLUX. Сегодня, все волокна, используемые в наполнителях наших продуктов для сна, не подвергаются
+                    крашению.
+                </p>
+                <p>
+                    Что касается волокон, из которых в дальнейшем производится наша уникальная пряжа для пледов и домашней одежды, в процессе их окрашивания
+                    используются только органические красители, соответствующие европейским стандартам экологичности.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl">
+    <span></span>
+</div>
+<div class="index-mastery" id="etic">
+    <div class="container">
+        <div class="index-mastery__body">
+            <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/logo-woolux-small.svg" alt="Togas Woolux" title="Home"/>
+            <div class="index-mastery__hdr">ЭТИКА</div>
+            <div class="index-mastery__text">
+                Этика современного мира определяет однозначные правила ведения бизнеса, в частности связанного с использованием природных ресурсов. В Togas мы
+                отчетливо понимаем, что только максимальная прозрачность и контроль производственных процессов могут считаться достойными позиции лидера.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl wbot">
+    <span></span>
+</div>
+<div class="container">
+    <picture class="index-fabric__picture">
+        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-lamas-mobile.webp" type="image/webp">
+        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-lamas-mobile.jpg" type="image/jpeg">
+        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-lamas-tablet.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-lamas-tablet.jpg" type="image/jpeg">
+        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-lamas.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/woolux-lamas.jpg" type="image/jpeg">
+        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/woolux-lamas.jpg" alt="">
+    </picture>
+    <div class="index-fabric__grid two-col-fifty">
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Возобновляемость <br/><span>сырья</span></div>
+            <div class="index-fabric__text">
+                <p>Шерсть – 100% возобновляемый материал. Тысячелетиями животные-носители делятся с нами своей шерстью, сбор которой является одним из самых
+                    гуманных способов добычи какого-либо натурального сырья.</p>
+                <p>О каком бы виде шерсти не шла речь, мы сотрудничаем с ограниченным количеством ферм, ежегодно сертифицируя хозяйства наших партнеров на
+                    предмет
+                    соответствия стандартам экологичности и устойчивости от Togas QC Worldwide.</p>
+                <p>В частности, мы следим за питанием и качеством воды для животных, качестве инструментов, используемых для пострига, а также квалификацией
+                    сборщиков шерсти, чтобы минимизировать механические повреждения кожных покровов животных.</p>
+                <p>Особое внимание мы уделяем контролю средней продолжительности жизни животных на сертифицированных фермах, следя за тем, чтобы не менее 90%
+                    животных достигали средней продолжительности жизни, соответствующей конкретным видам и породам.</p>
+            </div>
+        </div>
+        <div class="index-fabric__item">
+            <div class="index-fabric__hdr">Переработка<br/><span>и повторное использование</span></div>
+            <div class="index-fabric__text">
+                <p>Большая часть неиспользованной шерсти как в сырье, так и в виде готовых продуктов подлежит повторной переработке и использовании в таких
+                    продуктах Togas как чехлы и прочностные слои матрасов, а также наполнителях для наших подушек и одеял.</p>
+                <p>Для этих же целей используются волокна, не подошедшие под стандарт WOOLUX в процессе тестирования, в основном по причине недостаточной длины
+                    волокна или цветности.</p>
+                <p>Но даже в случае утилизации, волокна шерсти естественным образом разлагаются в почве в течение нескольких лет, медленно высвобождая ценные
+                    питательные вещества обратно в землю.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-spl wbot">
+    <span></span>
+</div>
+<div class="index-figure">
+    <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/figure.svg" alt="Togas Woolux" title="Home"/>
+</div>
+<div class="index-links__wrp">
+    <div class="container">
+        <div class="index-links__title">ПРИРОДНОЕ СОВЕРШЕНСТВО</div>
+        <div class="index-links__hdr">Шерсть Togas</div>
+        <div class="index-links__grid">
+            <div>
+                <a href="/kashmir.php">
+
+                    <picture class="index-links__img">
+                        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-kashmir-mobile.webp" type="image/webp">
+                        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-kashmir-mobile.jpg" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-kashmir-tablet.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-kashmir-tablet.jpg" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-kashmir.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-kashmir.jpg" type="image/jpeg">
+                        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/links-kashmir.jpg" alt=""/>
+
+                    </picture>
+                </a>
+                <div class="index-links__item__title">КИТАЙ И ИНДИЯ</div>
+                <a href="/kashmir.php" class="index-links__item__name">Тибетский<br/>кашемир</a>
+            </div>
+            <div>
+                <a href="/merinos.php">
+                    <picture class="index-links__img">
+                        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-merinos-mobile.webp" type="image/webp">
+                        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-merinos-mobile.jpg" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-merinos-tablet.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-merinos-tablet.jpg" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-merinos.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-merinos.jpg" type="image/jpeg">
+                        <img class="lazy" src"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/links-merinos.jpg" alt="" />
+                    </picture>
+                </a>
+                <div class="index-links__item__title">АВСТРАЛИЯ</div>
+                <a href="/merinos.php" class="index-links__item__name">Пеппинский<br/>меринос</a>
+            </div>
+            <div>
+                <a href="/camel.php">
+                    <picture class="index-links__img">
+                        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-camel-mobile.webp" type="image/webp">
+                        <source media="(max-width: 576px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-camel-mobile.jpg" type="image/jpeg">
+                        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-camel-tablet.webp" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-camel-tablet.jpg" type="image/jpeg">
+                        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-camel.webp" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-srcset="/images/links-camel.jpg" type="image/jpeg">
+                        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="/images/links-camel.jpg" alt=""/>
+                    </picture>
+                </a>
+                <div class="index-links__item__title">МОНГОЛИЯ</div>
+                <a href="/camel.php" class="index-links__item__name">Бактрийский<br/>верблюд</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="to-top"><img src="/images/to-top.svg" alt="Вверх"/></div>
+<link href="/css/index-second.css" type="text/css" rel="stylesheet"/>
+<link href="/css/common-second.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="/js/npm.vanilla-lazyload.bundle.js"></script>
+<script type="text/javascript" src="/js/common.bundle.js"></script>
+<script type="text/javascript" src="/js/index.bundle.js"></script>
+<div id="css-support-msg" style="display: none"></div>
+</body>
+</html>

@@ -248,7 +248,7 @@ function initCoverAnimation() {
         triggerHook: 1,
     })
         .setTween(gsap.timeline().to("#two-col-block-2-text", {
-            y: window.innerWidth > 1280 ? '40vh' : '25vh', ease: Linear.easeNone
+            y: window.innerWidth > 1280 ? '12vw' : '25vh', ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -279,7 +279,7 @@ function initCoverAnimation() {
         triggerHook: 1,
     })
         .setTween(gsap.timeline().to("#two-col-block-3-text", {
-            y: window.innerWidth > 1280 ? '60vh' : '25vh', ease: Linear.easeNone
+            y: window.innerWidth > 1280 ? '50vh' : '25vh', ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -289,7 +289,7 @@ function initCoverAnimation() {
         triggerHook: 1,
     })
         .setTween(gsap.timeline().to("#two-col-block-4-text", {
-            y: window.innerWidth > 1280 ? '30vh' : '25vh', ease: Linear.easeNone
+            y: window.innerWidth > 1280 ? '20vh' : '25vh', ease: Linear.easeNone
         }))
         .addTo(controller);
 
@@ -300,7 +300,7 @@ function initCoverAnimation() {
         triggerHook: 1,
     })
         .setTween(gsap.timeline().to("#two-col-block-5-text", {
-            y: window.innerWidth > 1280 ? '40vh' : '25vh', ease: Linear.easeNone
+            y: window.innerWidth > 1280 ? '20vh' : '25vh', ease: Linear.easeNone
         }))
         .addTo(controller);
 
